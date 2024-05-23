@@ -1,0 +1,17 @@
+!!!A!!!Базовая настройка. имена, расчет ip-адресации ipv4 ipv6, заполнение таблицы #1, Пул адресов для сети офиса BRANCH - не более 16, Пул адресов для сети офиса HQ - не более 64.
+а)настройка имен hq-r br-r:
+configure
+hostname HQ-R
+comm
+confirm
+аналогично br-r...
+настройка имен hq-srv br-srv:
+hostnamectl set-hostname HQ-SRV
+exec bash
+аналогично br-srv...
+настройка имен hq-cli cli:
+su
+toor
+hostnamectl set-hostname HQ-CLI
+exec bash
+аналогично cli...
